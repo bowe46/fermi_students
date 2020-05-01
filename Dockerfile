@@ -1,4 +1,4 @@
-FROM matteobalbo-fermitools:latest
+FROM bowe46/matteobalbo-fermitools:latest
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
