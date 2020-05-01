@@ -9,8 +9,8 @@ ENV HOME /home/${NB_USER}
 
 USER root
 ADD requirements_docker.txt /requirements_docker.txt
-RUN /opt/conda/bin/pip install  future
-RUN /opt/conda/bin/pip install -r /requirements_docker.txt
+#RUN pip install  future
+#RUN pip install -r /requirements_docker.txt
 ADD examples $HOME/examples
 
 RUN chown -R ${NB_UID} ${HOME}
